@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC || Roblox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iceberg&family=Syne:wght@400..800&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="umbrella.css">
+    <link rel="icon" href="images/uclogo.png">
+
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">ИНИЦИАЛИЗАЦИЯ СТРАНИЦЫ...</div>
+    </div>
+
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay">
+        <img src="images/uclogo.png" alt="">
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <img src="images/uclogo.png" alt="Umbrella Logo">
+            </div>
+            <h1 class="brand-name">UMBRELLA CORPORATION</h1>
+            <p class="tagline">Мы строим будущее без страха</p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">ВД</div>
+                <div class="menu-title">Введение</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">РЗ</div>
+                <div class="menu-title">Разработки</div>
+            </div>
+            <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">ГР</div>
+                <div class="menu-title">Галерея</div>
+            </div>
+            <!--<div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">TM</div>
+                <div class="menu-title">Testimonials</div>
+            </div> -->
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">ОН</div>
+                <div class="menu-title">о Нас</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">КТ</div>
+                <div class="menu-title">Контакты</div>
+            </div>
+        </div>
+
+
+        <div id="contentArea">
+
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">Осн. 2023</span>
+                        <h1 class="intro-headline">Мы строим будущее,<br>не боясь <span>последствий</span></h1>
+                        <p class="intro-subtext">Вымышленная транснациональная мегакорпорация-биотехнологический
+                            конгломерат</p>
+                        <div class="intro-cta-group">
+                            <button class="intro-cta-primary">Наша работа</button>
+                            <button class="intro-cta-secondary">Посмотреть таймлайн</button>
+                        </div>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-text">Администрация</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">Медиум РП</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">🔒</span>
+                            <span class="card-text">Защита и поддержка</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <!-- Metrics Strip -->
+                <div class="intro-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="9999999">0</span>
+                        <span class="metric-label">Игроков с нами</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="1488">0</span>
+                        <span class="metric-suffix">%</span>
+                        <span class="metric-label">Довольных игроков</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="12222">0</span>
+                        <span class="metric-suffix">RB</span>
+                        <span class="metric-label">Собрано робуксов на проект</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">N/A</span>
+                        <span class="metric-label">Поддержка проекта</span>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>Инновации — первым делом</h3>
+                        <p>We embrace emerging technologies and push creative boundaries to deliver solutions that set
+                            new industry standards.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>Комфорт для посетителей</h3>
+                        <p>Every pixel, every interaction is designed with real users in mind. We create experiences
+                            people genuinely love.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>Вывод результата</h3>
+                        <p>Beautiful design meets measurable impact. We track, iterate, and optimize for outcomes that
+                            matter to your business.</p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Preview -->
+                <div class="intro-tech">
+                    <p class="tech-label">Партнеры проекта, с которыми мы сотрудничаем</p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+                            <a class="tech-item" href="#">313123</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Наши Разработки</h2>
+                    <p class="section-subtitle">То, что мы разрабатываем сами</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Разработки</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'design')">Дизайн</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'support')">Поддержка</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="development">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-optimized-templates.jpg" alt="AI Development">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>AI Development</h4>
+                                        <p>Custom AI solutions powered by machine learning and neural networks for
+                                            intelligent automation and predictive analytics.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/coding-screen.jpg" alt="Web Applications">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Web Applications</h4>
+                                        <p>Responsive, scalable web apps built with modern frameworks like React, Vue,
+                                            and Next.js for optimal performance.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-mobile-app.jpg" alt="Mobile Apps">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Mobile Apps</h4>
+                                        <p>Native and cross-platform mobile solutions for iOS and Android that deliver
+                                            seamless user experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/design-screen.jpg" alt="UX/UI Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>UX/UI Design</h4>
+                                        <p>Beautiful, intuitive interfaces that delight users and drive engagement
+                                            through research-backed design principles.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/brand-identity.jpg" alt="Brand Identity">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Brand Identity</h4>
+                                        <p>Complete brand packages including logos, typography, color systems, and
+                                            comprehensive brand guidelines.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/motion-design.jpg" alt="Motion Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Motion Design</h4>
+                                        <p>Engaging animations and interactive experiences that bring your digital
+                                            products to life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="support">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/247-support.jpg" alt="24/7 Support">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>24/7 Support</h4>
+                                        <p>Round-the-clock technical assistance and maintenance to keep your systems
+                                            running smoothly.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/training-center.jpg" alt="Training">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Training & Workshops</h4>
+                                        <p>Empower your team with expert-led training sessions tailored to your
+                                            technology stack.</p>
+                                    </div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/managed-service.jpg" alt="Managed Services">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Managed Services</h4>
+                                        <p>End-to-end management of your digital infrastructure for worry-free
+                                            operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Галерея</h2>
+                    <p class="section-subtitle">Изучайте наши последние работы</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterGallery('web', this)">Web</button>
+                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Mobile</button>
+                    <button class="filter-btn" onclick="filterGallery('branding', this)">Branding</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/coding-screen.jpg" alt="Project 1">
+                        <div class="gallery-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-mobile-app.jpg" alt="Project 2">
+                        <div class="gallery-overlay">
+                            <h4>Fitness App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/brand-identity.jpg" alt="Project 3">
+                        <div class="gallery-overlay">
+                            <h4>Brand Identity</h4>
+                            <p>Design & Branding</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/managed-service.jpg" alt="Project 4">
+                        <div class="gallery-overlay">
+                            <h4>Analytics Dashboard</h4>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-optimized-templates.jpg" alt="Project 5">
+                        <div class="gallery-overlay">
+                            <h4>Banking App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/digital-strategy.jpg" alt="Project 6">
+                        <div class="gallery-overlay">
+                            <h4>Startup Branding</h4>
+                            <p>Design & Identity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Client Stories</h2>
+                    <p class="section-subtitle">What our clients say about us</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Working with NexaVerse transformed our digital presence. Their
+                            innovative approach and attention to detail exceeded our expectations at every turn.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
+                                    alt="Client 1">
+                            </div>
+                            <div class="author-info">
+                                <h5>Michael Chen</h5>
+                                <p>CEO, TechVentures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The team's expertise in UX design helped us create an app that our
+                            users absolutely love. Our engagement metrics have increased by 200%.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
+                                    alt="Client 2">
+                            </div>
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>Product Director, InnovateCo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">From strategy to execution, NexaVerse delivered exceptional results.
+                            Their commitment to quality is unmatched in the industry.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
+                                    alt="Client 3">
+                            </div>
+                            <div class="author-info">
+                                <h5>David Park</h5>
+                                <p>Founder, StartupHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The AI solutions they built for us have revolutionized our
+                            operations. We've seen a 40% increase in efficiency since implementation.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop"
+                                    alt="Client 4">
+                            </div>
+                            <div class="author-info">
+                                <h5>Emily Zhang</h5>
+                                <p>COO, DataFlow Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">О Нас</h2>
+                    <p class="section-subtitle">Наша задача и значения</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Pioneering Digital Innovation</h3>
+                        <p>Founded in 2020, NexaVerse has grown from a small team of passionate developers into a
+                            leading digital agency. We believe in pushing boundaries and creating solutions that make a
+                            real difference.</p>
+                        <p>Our diverse team brings together expertise from design, development, AI, and strategy to
+                            deliver holistic solutions that drive business growth and user engagement.</p>
+                        <p>We're not just building products – we're shaping the future of digital experiences.</p>
+                        <p>Discover AI-optimized web templates from <a href="https://templatemo.com" rel="nofollow"
+                                target="_blank">TemplateMo</a>. Maximize efficiency with the timer platform at <a
+                                href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a>. Design like a pro
+                            using vector stickers from <a href="https://www.vectorsticker.com" rel="nofollow"
+                                target="_blank">VectorSticker</a>.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-our-team.jpg" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/uclogo.png" alt="Umbrella Logo">
+                    </div>
+                    <div class="small-brand">
+                        <h3>UMBRELLA CORPORATION</h3>
+                        <p>Мы строим будущее без страха</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Вернуться в меню</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Связаться с Нами</h2>
+                    <p class="section-subtitle">Соцсети, где вы можете найти Нас</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img draggable="false" src="images/Discord-Logo-700x394.png" alt="Discord">
+                            </div>
+                            <div class="contact-details">
+                                <h4>Discord</h4>
+                                <a class="contant-link" href="https://discord.gg/tnNFAZBMgv" target="_blank">Дискорд
+                                    сервер</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                            </div>
+                            <div class="contact-details">
+                                <h4>N/A</h4>
+                                <a class="contant-link" href="#" target="_blank">N/A</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                            </div>
+                            <div class="contact-details">
+                                <h4>N/A</h4>
+                                <a class="contant-link" href="#" target="_blank">N/A</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                            </div>
+                            <div class="contact-details">
+                                <h4>N/A</h4>
+                                <a class="contant-link" href="#" target="_blank">N/A</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <iframe class="discord-frame" src="https://discord.com/widget?id=1399273101430358127&theme=dark"
+                        width="350" height="500" allowtransparency="true" frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="mainFooter">
+            <p>© 2026 <a target="_blank" href="https://discord.gg/tnNFAZBMgv">Umbrella Corporation</a>. TemplateMo.
+                xilloss.</p>
+        </footer>
+    </div>
+    <script src="umbrella.js"></script>
+</body>
+
+</html>
